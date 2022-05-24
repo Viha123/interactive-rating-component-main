@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="index2.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class = "card1">
+    <img class = "img1" src="images/icon-star.svg" alt="img1">
+    <div class = "title">How did we do?</div>
+    <div class = "description">
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </div>
+    <div class = "rating">
+      <div onclick = "ratingSelected(this)" onclick = "remRating(this)" class = "one">1</div>
+      <div onclick = "ratingSelected(this)"class = "two">2</div>
+      <div onclick = "ratingSelected(this)"class = "three">3</div>
+      <div onclick = "ratingSelected(this)"class = "four">4</div>
+      <div onclick = "ratingSelected(this)"class = "five">5</div>
+    </div>
+    
+    <div onclick = "thankYouCard()" onclick = "getSelection()" class = "submit">SUBMIT</div>
+  </div>
+
+
+  
+</body>
+</html>

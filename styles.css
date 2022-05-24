@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    font-family: "Overpass", sans-serif;
+}
+
+body{
+    background-color: var(--very-dark-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.img1{
+    background-color: var(--very-dark-blue);
+    border-radius: 50%;
+    margin: 1rem;
+    padding: 10px;
+}
+.card1{
+    background-color: var(--dark-blue);
+    max-width: 25vw;
+    min-height: 35vh;
+    border-radius: 10%;
+}
+.title{
+    color: white;
+    font-weight: 700;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+.description{
+    color: var(--medium-grey);
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    line-height: 1.3rem;
+}
+.rating{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: flex
+    ;
+    justify-content: space-evenly;
+}
+.one, .two, .three, .four, .five{
+    background-color: var(--very-dark-blue);
+    padding:10px 15px 10px 15px;
+    border-radius: 50%;
+    margin-top: 0.8rem;
+}
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover{
+    background-color: var(--orange);
+    transition: all 0.5s ease;
+}
+
+.submit{
+    text-align: center;   
+    margin: 1.5rem 1rem 1.5rem 1rem;
+    background: var(--orange);
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.submit:hover{
+    background-color: white;
+    color: var(--orange);
+    transition: all 0.5s ease;
+}
+.card2{
+    background-color: var(--dark-blue);
+    max-width: 25vw;
+    min-height: 35vh;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img2{
+    margin: 1.5rem;
+}
+.sel{
+    margin: 1.5rem;
+    color: var(--orange);
+    background-color: var(--very-dark-blue);
+    padding: 20px;
+    border-radius: 15px;
+}
+.description{
+    margin: 1.5rem;
+    text-align: center;
+}
+.ty{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
