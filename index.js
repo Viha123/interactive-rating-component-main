@@ -10,6 +10,7 @@ function ratingSelected(ele){
         element1.style.backgroundColor = "hsl(216, 12%, 8%)";
         counter = 1;
     }    
+    finalElemenent = ele.innerHTML;
     return finalElemenent;
 }
 
