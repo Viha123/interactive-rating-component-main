@@ -15,7 +15,7 @@ function ratingSelected(ele){
 }
 
 function thankYouCard(){
-    location.href = "/thankYou.html";
+    location.href = "thankYou.html";
 }
 function selection(){
     console.log(arr[0].innerHTML);
