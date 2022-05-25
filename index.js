@@ -11,14 +11,12 @@ function ratingSelected(ele){
         counter = 1;
     }    
     finalElemenent = ele.innerHTML;
+    console.log(finalElemenent);
     return finalElemenent;
 }
 
-function thankYouCard(){
-    location.href = "thankYou.html";
-}
 function selection(){
-    console.log(arr[0].innerHTML);
+    
     if(finalElemenent == "1" || finalElemenent == 1){
         document.getElementById("id").innerHTML = "You selected 1 / 5"
     }
