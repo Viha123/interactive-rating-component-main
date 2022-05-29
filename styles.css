@@ -15,26 +15,27 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
-.img1{
+#img1{
     background-color: var(--very-dark-blue);
     border-radius: 50%;
     margin: 1rem;
     padding: 10px;
 }
-.card1{
+#card1{
     background-color: var(--dark-blue);
     max-width: 25vw;
     min-height: 35vh;
     border-radius: 10%;
 }
-.title{
+#title{
     color: white;
     font-weight: 700;
     margin-left: 1rem;
     font-size: 1.3rem;
 }
-.description{
+#description{
     color: var(--medium-grey);
     font-size: 0.8rem;
     margin-left: 1rem;
@@ -42,7 +43,7 @@ body{
     margin-right: 1rem;
     line-height: 1.3rem;
 }
-.rating{
+#rating{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
@@ -50,18 +51,18 @@ body{
     ;
     justify-content: space-evenly;
 }
-.one, .two, .three, .four, .five{
+#one, #two, #three, #four, #five{
     background-color: var(--very-dark-blue);
     padding:10px 15px 10px 15px;
     border-radius: 50%;
     margin-top: 0.8rem;
 }
-.one:hover, .two:hover, .three:hover, .four:hover, .five:hover{
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover{
     background-color: var(--orange);
     transition: all 0.5s ease;
 }
 
-.submit{
+#submit{
     text-align: center;   
     margin: 1.5rem 1rem 1.5rem 1rem;
     background: var(--orange);
@@ -73,12 +74,12 @@ body{
     color: white;
     display: block;
 }
-.submit:hover{
+#submit:hover{
     background-color: white;
     color: var(--orange);
     transition: all 0.5s ease;
 }
-.card2{
+#card2{
     background-color: var(--dark-blue);
     max-width: 25vw;
     min-height: 35vh;
@@ -87,9 +88,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: none;
+    
 }
 .img2{
     margin: 1.5rem;
+
 }
 .sel{
     margin: 1.5rem;
@@ -105,4 +109,5 @@ body{
 .ty{
     font-size: 1.2rem;
     font-weight: 700;
+    text-align: center;
 }

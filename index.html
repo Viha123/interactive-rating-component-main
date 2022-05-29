@@ -7,8 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
-  <script type="text/javascript" src="index.js"></script>
-  <script type="text/javascript" src="index2.js"></script>
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,25 +15,40 @@
 
   <!-- Rating state start -->
 
-  <div class = "card1">
-    <img class = "img1" src="images/icon-star.svg" alt="img1">
-    <div class = "title">How did we do?</div>
-    <div class = "description">
-      Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!
-    </div>
-    <div class = "rating">
-      <div onclick = "ratingSelected(this)" onclick = "remRating(this)" class = "one">1</div>
-      <div onclick = "ratingSelected(this)"class = "two">2</div>
-      <div onclick = "ratingSelected(this)"class = "three">3</div>
-      <div onclick = "ratingSelected(this)"class = "four">4</div>
-      <div onclick = "ratingSelected(this)"class = "five">5</div>
-    </div>
+  <main>
+    <div id = "card1">
+      <img id = "img1" src="images/icon-star.svg" alt="img1">
+      <div id = "title">How did we do?</div>
+      <div id = "description">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </div>
+      <div id = "rating">
+        <div onclick = "ratingSelected(this)"id = "one">1</div>
+        <div onclick = "ratingSelected(this)"id = "two">2</div>
+        <div onclick = "ratingSelected(this)"id = "three">3</div>
+        <div onclick = "ratingSelected(this)"id = "four">4</div>
+        <div onclick = "ratingSelected(this)"id = "five">5</div>
+      </div>
     
-    <a href= "/thankYou.html"onclick = "getSelection()" class = "submit">SUBMIT</a>
-  </div>
+      <div id = "submit">SUBMIT</div>
+    
+    </div>
+  </main>
+  <div id = "card2">
+    
+    <img class = "img2" src="/images/illustration-thank-you.svg" alt="ty">
+    <div class = "sel" id = "id">You selected <changeValue>0</changeValue> out of 5</div>
+    
+    <div class = "ty">Thank you!</div>
+    <div class = "description">
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </div>
+  </div> 
+  <script src="index.js"></script>
 
 
-  
 </body>
+
 </html>

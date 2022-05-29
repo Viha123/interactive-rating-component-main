@@ -1,36 +1,24 @@
 var counter = 0;
 const arr = new Array();
-var finalElemenent;
+var finalElement = new Array(); 
+var element1;
 function ratingSelected(ele){
     ele.style.backgroundColor = "hsl(216, 12%, 54%)";
     counter++;
-    arr.push(ele);    
+    arr.push(ele);  
+    finalElement.push(ele);  
     if (counter==2){
         element1 = arr.shift();
         element1.style.backgroundColor = "hsl(216, 12%, 8%)";
         counter = 1;
-    }    
-    finalElemenent = ele.innerHTML;
-    console.log(finalElemenent);
-    return finalElemenent;
+    }
+    console.log(finalElement);    
 }
 
-function selection(){
-    
-    if(finalElemenent == "1" || finalElemenent == 1){
-        document.getElementById("id").innerHTML = "You selected 1 / 5"
-    }
-    else if(finalElemenent == "2" || finalElemenent == 2){
-        document.getElementById("id").innerHTML = "You selected 2 / 5"
-    }
-    else if(finalElemenent == "3" || finalElemenent == 3){
-        document.getElementById("id").innerHTML = "You selected 3 / 5"
-    }
-    else if(finalElemenent == "4" || finalElemenent == 4){
-        document.getElementById("id").innerHTML = "You selected 4 / 5"
-    }
-    else if(finalElemenent == "5" || finalElemenent == 5){
-        document.getElementById("id").innerHTML = "You selected 5 / 5"
-    }
-}
-    
+var s = document.getElementById("submit");
+s.addEventListener("click", function(){
+    document.getElementById("card1").style.display = "none";
+    document.getElementById("card2").style.display = "flex";
+
+    document.getElementsByTagName("changeValue")[0].innerHTML = finalElement.pop().innerHTML;
+})
